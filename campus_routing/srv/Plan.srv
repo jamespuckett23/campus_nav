@@ -1,0 +1,5 @@
+geometry_msgs::msg::Pose[] start_to_goal
+
+---
+
+nav_msgs::msg::Path route
