@@ -3,12 +3,12 @@ project(campus_routing)
 
 ## Find catkin and any catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  geometry_msgs
-  nav_msgs
-  lanelet2
-  message_generation
+lanelet2
 )
+find_package(roscpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(message_generation REQUIRED)
 
 add_service_files(
   FILES
@@ -42,4 +42,9 @@ target_link_libraries(navigator
 )
 target_link_libraries(map_node
   ${catkin_LIBRARIES}
+)
+
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+  FILES_MATCHING PATTERN "*.launch"
 )

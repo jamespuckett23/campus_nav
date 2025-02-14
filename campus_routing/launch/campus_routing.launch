@@ -1,0 +1,5 @@
+<launch>
+    <node name="navigator" pkg="campus_routing" type="navigator" output="screen"/>
+
+    <node name="map_node" pkg="campus_routing" type="map_node" output="screen"/>
+</launch>

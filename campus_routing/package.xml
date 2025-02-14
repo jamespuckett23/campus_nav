@@ -4,6 +4,7 @@
   <version>0.0.1</version>
   <description>Use Lanelet2 and OSM to route through a college campus</description>
   <maintainer email="jcpuckett2001@gmail.com">James Puckett</maintainer>
+  <license>BSD</license>
 
   <!-- Dependencies required for building and running -->
   <buildtool_depend>catkin</buildtool_depend>
@@ -11,11 +12,11 @@
   <!-- Core dependencies -->
   <build_depend>roscpp</build_depend>
   <build_depend>message_generation</build_depend>
+  <build_depend>lanelet2</build_depend>
 
   <exec_depend>roscpp</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
-  <exec_depend>Lanelet2</exec_depend>
   <exec_depend>message_runtime</exec_depend>
 
   <export>

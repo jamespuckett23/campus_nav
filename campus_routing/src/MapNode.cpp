@@ -69,7 +69,7 @@ nav_msgs::msg::Path Map::plan(geometry_msgs::msg::Pose start, geometry_msgs::msg
 
 
 int main(int argc, char** argv) {
-    ros::init(argc, argv, "MapNode");
+    ros::init(argc, argv, "map_node");
 
     Map node;
     ros::spin()

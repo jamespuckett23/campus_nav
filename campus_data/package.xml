@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>campus_data</name>
+  <version>0.0.1</version>
+  <description>Use Lanelet2 and OSM to route through a college campus</description>
+  <maintainer email="jcpuckett2001@gmail.com">James Puckett</maintainer>
+  <license>BSD</license>
+
+  <!-- Dependencies required for building and running -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <architecture_independent/>
+  </export>
+</package>
