@@ -20,8 +20,10 @@ class Map
         ros::ServiceServer service_;
 
         std::string MapPath;
-        lanelet2::Origin origin;
         LaneletMapPtr map;
+        
+        lanelet2::Origin origin;
+        lanelet2::projection::UtmProjector projector;
 
         double start;
         double goal;

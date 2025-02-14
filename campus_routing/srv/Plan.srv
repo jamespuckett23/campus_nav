@@ -1,4 +1,4 @@
-geometry_msgs::msg::Pose[] start_to_goal
+lanelet2::GPS_point[] start_to_goal
 
 ---
 
